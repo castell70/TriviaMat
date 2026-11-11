@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>MathTrivia</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Added Orbitron font (Tron-like) for the brand -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+    "imports": {}
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">MathTrivia</div>
+    <div class="top-actions">
+      <button id="btn-example" class="btn">Pregunta de ejemplo</button>
+      <div style="position:relative;display:inline-block">
+        <button id="btn-tools" class="btn">Herramientas ▾</button>
+      </div>
+      <button id="btn-history" class="btn">Historial</button>
+      <!-- hidden file input kept for load operation -->
+      <input id="file-load" type="file" accept=".json" style="display:none" />
+    </div>
+  </header>
+
+  <main class="app">
+    <aside class="sidebar">
+      <div class="user-prompt">
+        <label>Nombre:</label>
+        <input id="player-name" placeholder="Ingresa tu nombre" />
+        <button id="start-btn" class="primary">Iniciar juego</button>
+      </div>
+
+      <nav class="categories" id="categories"></nav>
+
+      <section class="tips" id="tips">
+        <h4>Consejo</h4>
+        <p id="category-tip">Selecciona una categoría para ver un consejo.</p>
+        <div class="powered-wrap" aria-hidden="true">
+          <span class="powered">Powered by ITCPO</span>
+        </div>
+      </section>
+    </aside>
+
+    <section class="main-area">
+      <div id="game-area" class="card">
+        <div id="game-header" class="game-header">
+          <div id="current-cat">Categoría: -</div>
+          <div id="progress">Pregunta 0 / 10</div>
+        </div>
+
+        <div id="question-box" class="question-box">
+          <div id="question-text">Presiona "Iniciar juego" y elige una categoría para empezar.</div>
+          <div id="answers" class="answers"></div>
+        </div>
+
+        <div class="controls">
+          <button id="next-btn" class="btn" disabled>Siguiente</button>
+          <div id="scorebox">Puntaje: 0</div>
+        </div>
+      </div>
+
+      <section class="history-area card" id="history-area" hidden>
+        <h3>Historial de jugadores</h3>
+        <table id="history-table">
+          <thead><tr><th>Jugador</th><th>Categorías</th><th>Resultados</th><th>Intentos</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <button id="close-history" class="btn">Cerrar</button>
+      </section>
+    </section>
+  </main>
+
+  <button id="help-btn" class="help-btn" title="Ayuda">?</button>
+
+  <!-- Tools dropdown (replaces modal) -->
+  <div id="tools-dropdown" class="tools-dropdown" hidden aria-hidden="true">
+    <div class="tools-list">
+      <button id="tools-load" class="tool-item">Cargar más preguntas</button>
+      <button id="tools-download" class="tool-item">Descargar preguntas</button>
+      <button id="tools-reset" class="tool-item reset">Reiniciar historial</button>
+    </div>
+  </div>
+
+  <!-- Example question modal (matches real question UI) -->
+  <div id="example-modal" class="modal" hidden>
+    <div class="modal-card">
+      <div class="modal-top" style="align-items:center;justify-content:space-between;">
+        <div class="help-brand">MathTrivia</div>
+        <button id="close-example" class="modal-close" aria-label="Cerrar">&times;</button>
+      </div>
+
+      <div id="example-content" style="display:flex;flex-direction:column;gap:12px">
+        <div class="card" style="padding:12px">
+          <div class="game-header">
+            <div id="ex-current-cat">Ejemplo</div>
+            <div id="ex-progress">Pregunta 1 / 1</div>
+          </div>
+          <div class="question-box">
+            <div id="ex-question-text" class="question-text">Ejemplo de pregunta</div>
+            <div id="ex-answers" class="answers"></div>
+          </div>
+          <div class="controls" style="margin-top:10px">
+            <div id="ex-scorebox">Puntaje: 0</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Help modal starts hidden; added explicit close button and ensured it won't display unless toggled -->
+  <div id="help-modal" class="modal" hidden>
+    <div class="modal-card">
+      <div class="modal-top" style="flex-direction:column;align-items:flex-start;gap:6px;position:relative">
+        <div class="help-brand">MathTrivia</div>
+        <h2>Ayuda detallada</h2>
+        <button id="close-help" class="modal-close" aria-label="Cerrar">&times;</button>
+      </div>
+
+      <p>Bienvenido a MathTrivia — una aplicación para practicar y evaluar habilidades matemáticas por categorías.</p>
+
+      <ol>
+        <li><strong>Registro</strong>: Escribe tu nombre en el panel izquierdo y presiona "Iniciar juego". El nombre se usará para guardar tu historial.</li>
+        <li><strong>Seleccionar categoría</strong>: Toca una categoría en la lista izquierda; el contador entre paréntesis muestra cuántas preguntas hay disponibles.</li>
+        <li><strong>Inicio de la ronda</strong>: Cada ronda toma hasta 10 preguntas aleatorias de la categoría seleccionada. Las opciones de cada pregunta se barajan en cada intento.</li>
+        <li><strong>Responder</strong>: Toca la opción que consideres correcta. La aplicación indicará inmediatamente si la respuesta fue correcta (verde) o incorrecta (rojo) y mostrará la respuesta correcta si aplica.</li>
+        <li><strong>Consejos</strong>: Después de una respuesta incorrecta verás un consejo breve para esa pregunta; además en la columna izquierda aparece un consejo general para la categoría seleccionada.</li>
+        <li><strong>Progreso y puntaje</strong>: El encabezado muestra la pregunta actual y el puntaje se actualiza en tiempo real en la esquina inferior derecha del área de juego.</li>
+        <li><strong>Siguiente</strong>: El juego avanza automáticamente tras mostrar el resultado; también puedes usar el botón "Siguiente" si necesitas saltar manualmente.</li>
+        <li><strong>Historial</strong>: Al finalizar la ronda el resultado se guarda en el historial del jugador. Pulsa "Historial" en la barra superior para ver intentos previos por jugador y categoría.</li>
+        <li><strong>Cargar preguntas</strong>: Usa "Cargar más preguntas (JSON)" para añadir preguntas desde un archivo con la misma estructura que el archivo integrado (categorías con listas de objetos {question, options, answer, tip}).</li>
+        <li><strong>Exportar</strong>: "Descargar preguntas (JSON)" exporta la base de preguntas actualmente cargada para compartir o backup.</li>
+        <li><strong>Ejemplo</strong>: Pulsa "Pregunta de ejemplo" para ver el formato de una pregunta de demostración.</li>
+        <li><strong>Privacidad</strong>: Los historiales se almacenan localmente en tu navegador (localStorage) y no se envían a servidores externos.</li>
+      </ol>
+
+      <p class="copyright">© 2025 ITCPO — Carlos Alfredo Castillo Flores. Todos los derechos reservados.</p>
+    </div>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
+

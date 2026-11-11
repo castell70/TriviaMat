@@ -1,0 +1,122 @@
+{
+  "Aritmética": [
+    {"question":"¿Cuál es la suma de 8 y 5?","options":["12","13","14","15"],"answer":1,"tip":"Suma directa."},
+    {"question":"¿Cuál es el producto de 7 y 6?","options":["42","36","48","40"],"answer":0,"tip":"Multiplica 7 por 6."},
+    {"question":"¿Cuál es la mitad de 50?","options":["20","25","30","35"],"answer":1,"tip":"Divide entre 2."},
+    {"question":"¿Cuál es 15 - 9?","options":["6","5","7","4"],"answer":0,"tip":"Resta básica."},
+    {"question":"¿Cuánto es 9 × 0?","options":["0","9","1","10"],"answer":0,"tip":"Cualquier número por cero es cero."},
+    {"question":"¿Cuál es 100 dividido entre 4?","options":["20","25","30","40"],"answer":1,"tip":"Divide 100 entre 4."},
+    {"question":"¿Qué número falta: 2, 4, 6, ?","options":["7","8","9","10"],"answer":1,"tip":"Secuencia de pares."},
+    {"question":"¿Cuánto es 11 + 11?","options":["22","20","21","24"],"answer":0,"tip":"Suma directa."},
+    {"question":"¿Cuál es la suma de 3 + 6 + 1?","options":["10","9","8","11"],"answer":0,"tip":"Suma en orden."},
+    {"question":"¿Cuánto es 4^2?","options":["8","16","12","20"],"answer":1,"tip":"Potencia: 4 al cuadrado."}
+  ],
+  "Álgebra": [
+    {"question":"Si x + 3 = 7, ¿cuánto vale x?","options":["3","4","5","6"],"answer":1,"tip":"Resta 3 en ambos lados."},
+    {"question":"Resuelve 2x = 10: ¿x = ?","options":["5","10","8","6"],"answer":0,"tip":"Divide entre 2."},
+    {"question":"Simplifica: 3x + 2x = ?","options":["5x","6x","x","4x"],"answer":0,"tip":"Suma coeficientes."},
+    {"question":"Si 3x = 12, ¿x = ?","options":["3","4","2","6"],"answer":1,"tip":"Divide entre 3."},
+    {"question":"Factoriza x^2 - 9: ¿cómo queda?","options":["(x-3)(x+3)","(x-9)(x+1)","(x-1)(x+9)","(x-3)^2"],"answer":0,"tip":"Diferencia de cuadrados."},
+    {"question":"Resuelve: x^2 = 16 (x real positivo). ¿x = ?","options":["4","-4","0","8"],"answer":0,"tip":"Raíz cuadrada."},
+    {"question":"Si x - 5 = 2, ¿x = ?","options":["7","3","-3","10"],"answer":0,"tip":"Suma 5 a ambos lados."},
+    {"question":"Simplifica 4(x + 2): ¿resultado?","options":["4x+8","4x+2","x+8","4x+4"],"answer":0,"tip":"Distribuye el 4."},
+    {"question":"Resuelve 5x + 5 = 0: ¿x = ?","options":["-1","1","0","5"],"answer":0,"tip":"Despeja x."},
+    {"question":"Si 2(x + 3) = 14, ¿x = ?","options":["4","5","3","2"],"answer":0,"tip":"Divide y resta."}
+  ],
+  "Geometría": [
+    {"question":"¿Cuántos grados suman los ángulos de un triángulo?","options":["180°","360°","90°","270°"],"answer":0,"tip":"Propiedad básica."},
+    {"question":"Área de un rectángulo de base 5 y altura 4: ¿cuál es?","options":["20","9","10","15"],"answer":0,"tip":"base × altura."},
+    {"question":"Perímetro de un cuadrado de lado 3: ¿cuál es?","options":["12","9","6","15"],"answer":0,"tip":"4 × lado."},
+    {"question":"Área de un círculo de radio r: ¿fórmula?","options":["πr^2","2πr","πd","r^2"],"answer":0,"tip":"Fórmula conocida."},
+    {"question":"Número de caras de un cubo: ¿cuántas?","options":["6","8","4","12"],"answer":0,"tip":"Cubo clásico."},
+    {"question":"¿Cuánto mide un ángulo recto?","options":["90°","45°","180°","60°"],"answer":0,"tip":"Ángulo de 90°."},
+    {"question":"Área de un triángulo con base 6 y altura 4: ¿cuál es?","options":["12","24","10","8"],"answer":0,"tip":"(base×altura)/2."},
+    {"question":"¿Cuántos vértices tiene un tetraedro?","options":["4","6","8","3"],"answer":0,"tip":"Sólido platónico."},
+    {"question":"La diagonal de un cuadrado de lado 1 es: ¿cuánto?","options":["√2","1","2","√3"],"answer":0,"tip":"Teorema de Pitágoras."},
+    {"question":"Suma de ángulos interiores de un cuadrilátero: ¿cuánto?","options":["360°","180°","270°","540°"],"answer":0,"tip":"Suma dependiente en polígonos."}
+  ],
+  "Cálculo": [
+    {"question":"Derivada de f(x) = x^2: ¿cuál es?","options":["2x","x","x^3","1"],"answer":0,"tip":"Regla de potencia."},
+    {"question":"Integral de 1 dx: ¿resultado?","options":["x + C","1 + C","0","C"],"answer":0,"tip":"Antiderivada básica."},
+    {"question":"Derivada de sin x: ¿cuál es?","options":["cos x","-sin x","tan x","-cos x"],"answer":0,"tip":"Derivadas trigonométricas."},
+    {"question":"Integral de 2x dx: ¿cuál es?","options":["x^2 + C","2x + C","x + C","x^2/2 + C"],"answer":0,"tip":"Antiderivada de potencia."},
+    {"question":"Límite cuando x→0 de sin x / x: ¿cuánto es?","options":["1","0","∞","-1"],"answer":0,"tip":"Límite trig estándar."},
+    {"question":"Derivada de e^x: ¿cuál es?","options":["e^x","x e^{x-1}","1","0"],"answer":0,"tip":"La función es su propia derivada."},
+    {"question":"Integral de 0 dx: ¿resultado?","options":["C","0","x","1"],"answer":0,"tip":"Constante de integración."},
+    {"question":"Derivada de ln x: ¿cuál es?","options":["1/x","ln x","x","-1/x"],"answer":0,"tip":"Regla logarítmica."},
+    {"question":"¿Qué representa la derivada?","options":["pendiente/variación instantánea","área","volumen","promedio"],"answer":0,"tip":"Concepto geométrico."},
+    {"question":"¿Qué da una integral definida?","options":["área bajo curva","pendiente","límite","derivada"],"answer":0,"tip":"Interpretación geométrica."}
+  ],
+  "Probabilidad": [
+    {"question":"Probabilidad de sacar cara al lanzar una moneda justa: ¿cuál es?","options":["1/2","1/3","1/4","1"],"answer":0,"tip":"Dos caras posibles."},
+    {"question":"Si hay 3 bolas rojas y 2 azules, P(azul) = ?","options":["2/5","3/5","1/2","1/5"],"answer":0,"tip":"Casos favorables / totales."},
+    {"question":"Probabilidad de sacar un número par con un dado (1-6): ¿cuál es?","options":["1/2","1/3","1/6","2/3"],"answer":0,"tip":"Números pares: 2,4,6."},
+    {"question":"Eventos independientes: P(A y B) = ?","options":["P(A)P(B)","P(A)+P(B)","P(A)-P(B)","P(A)/P(B)"],"answer":0,"tip":"Multiplicar probabilidades."},
+    {"question":"Probabilidad complementaria de A es: ¿cuál?","options":["1-P(A)","P(A)","P(A)^2","P(A)/2"],"answer":0,"tip":"Complemento."},
+    {"question":"Si se elige 1 carta de una baraja de 52, P(as) = ?","options":["4/52","1/13","both","1/52"],"answer":2,"tip":"4 ases en 52 cartas."},
+    {"question":"Probabilidad de no obtener éxito en 3 intentos si p = 0.2: ¿cuál es?","options":["(0.8)^3","0.2^3","0.6","0.4"],"answer":0,"tip":"Complemento elevado."},
+    {"question":"Esperanza de variable que toma 1 con p=0.5 y 0 con p=0.5: ¿cuál es?","options":["0.5","1","0","2"],"answer":0,"tip":"Media ponderada."},
+    {"question":"¿Cuándo aplica la distribución binomial?","options":["ensayos independientes","continuos","con densidad","solo uno"],"answer":0,"tip":"Ensayos independientes y éxito/fracaso."},
+    {"question":"Si se lanzan dos monedas, prob. de 2 caras: ¿cuánto es?","options":["1/4","1/2","1/3","1/8"],"answer":0,"tip":"(1/2)*(1/2)."}
+  ],
+  "Lógica": [
+    {"question":"Negación de 'p y q' es: ¿cuál?","options":["¬p o ¬q","¬p y ¬q","p o q","¬(p)"],"answer":0,"tip":"Ley de De Morgan."},
+    {"question":"Si p → q y p es verdadero, entonces q es...","options":["verdadero","falso","indeterminado","contradictorio"],"answer":0,"tip":"Modus ponens."},
+    {"question":"Contradicción es una fórmula que es...","options":["siempre falsa","siempre verdadera","a veces verdadera","ninguna"],"answer":0,"tip":"Definición."},
+    {"question":"Tautología es...","options":["siempre verdadera","siempre falsa","ambigua","ninguna"],"answer":0,"tip":"Definición."},
+    {"question":"Si 'si llueve entonces la calle está mojada' y no está mojada, entonces...","options":["no llovió","llovió","indeterminado","es de noche"],"answer":0,"tip":"Contraposición."},
+    {"question":"La doble negación ¬(¬p) equivale a: ¿qué?","options":["p","¬p","contradicción","tautología"],"answer":0,"tip":"Regla básica."},
+    {"question":"Silogismo: Todos A son B. C es A. Entonces C es...","options":["B","A","no B","indeterminado"],"answer":0,"tip":"Silogismo clásico."},
+    {"question":"Equivalencia lógica se denota por...","options":["↔","→","∧","∨"],"answer":0,"tip":"Bicondicional."},
+    {"question":"p ∨ q es verdadero si...","options":["al menos uno es verdadero","ninguno verdadero","ambos falsos","ambos verdaderos"],"answer":0,"tip":"Or lógico."},
+    {"question":"p ∧ q es verdadero si...","options":["ambos verdaderos","uno verdadero","ninguno","siempre"],"answer":0,"tip":"And lógico."}
+  ],
+  "Teoría de Números": [
+    {"question":"Número primo menor que 10: ¿cuál?","options":["7","9","8","6"],"answer":0,"tip":"2,3,5,7 son primos."},
+    {"question":"MCD de 8 y 12: ¿cuál es?","options":["4","2","3","6"],"answer":0,"tip":"Máximo común divisor."},
+    {"question":"¿2 es primo?","options":["Sí","No","Sólo par","Depende"],"answer":0,"tip":"2 es el único primo par."},
+    {"question":"Residuo de 10 mod 3: ¿cuánto?","options":["1","2","0","3"],"answer":0,"tip":"10 = 3*3 +1."},
+    {"question":"Si a ≡ b (mod n), entonces a - b es divisible por...","options":["n","a","b","1"],"answer":0,"tip":"Definición de congruencia."},
+    {"question":"Número perfecto pequeño: ¿6 es perfecto?","options":["Sí","No","Sólo par","Sólo impar"],"answer":0,"tip":"Suma de divisores propios:1+2+3=6."},
+    {"question":"¿Cuál es el siguiente número primo después de 7?","options":["11","9","10","8"],"answer":0,"tip":"Saltando compuestos."},
+    {"question":"¿Qué es un número compuesto?","options":["tiene divisores aparte de 1 y sí mismo","es primo","es 1","es negativo"],"answer":0,"tip":"Definición básica."},
+    {"question":"MCM de 4 y 6: ¿cuál es?","options":["12","10","24","8"],"answer":0,"tip":"Mínimo común múltiplo."},
+    {"question":"¿1 es primo?","options":["No","Sí","Depende","Sólo en Z"],"answer":0,"tip":"1 no se considera primo por convención."}
+  ],
+  "Estadística": [
+    {"question":"La media de 2, 4, 6 es: ¿cuál?","options":["4","3","6","2"],"answer":0,"tip":"Suma/contador."},
+    {"question":"La mediana de 1, 3, 5, 7, 9 es: ¿cuál?","options":["5","3","7","1"],"answer":0,"tip":"Valor central."},
+    {"question":"Moda: ¿qué es?","options":["valor más frecuente","media","mediana","rango"],"answer":0,"tip":"Frecuencia."},
+    {"question":"Varianza: ¿qué mide?","options":["dispersión","promedio","asimetría","frecuencia"],"answer":0,"tip":"Desviación al cuadrado promedio."},
+    {"question":"Desviación estándar: ¿qué es?","options":["raíz de la varianza","la varianza","media","mediana"],"answer":0,"tip":"Raíz cuadrada."},
+    {"question":"Rango de 2, 5, 9 es: ¿cuánto?","options":["7","5","9","4"],"answer":0,"tip":"máximo - mínimo."},
+    {"question":"Muestra aleatoria: ¿qué representa?","options":["subset representativo","todo","ninguno","sesgo"],"answer":0,"tip":"Selección aleatoria."},
+    {"question":"Si los datos están sesgados a la derecha, la cola está...","options":["a la derecha","a la izquierda","en el centro","no existe"],"answer":0,"tip":"Asimetría positiva."},
+    {"question":"Coeficiente de correlación: ¿qué mide?","options":["relación lineal entre variables","causa","mediana","dispersión"],"answer":0,"tip":"Relación lineal."},
+    {"question":"Tamaño de muestra recomendado depende de...","options":["variabilidad y confianza deseada","color","hora","día"],"answer":0,"tip":"Diseño experimental."}
+  ],
+  "Combinatoria": [
+    {"question":"Permutaciones de 3 elementos (sin repetición): ¿cuántas?","options":["6","3","9","1"],"answer":0,"tip":"3! = 6."},
+    {"question":"Combinación C(5,2): ¿cuánto?","options":["10","20","5","15"],"answer":0,"tip":"Fórmula nCk."},
+    {"question":"Si el orden importa, usamos...","options":["permutaciones","combinaciones","mediana","moda"],"answer":0,"tip":"Diferencia clave."},
+    {"question":"Número de anagramas de 'ABA': ¿cuántos?","options":["3","6","2","1"],"answer":0,"tip":"Cuentas con repetición."},
+    {"question":"5! es: ¿cuánto?","options":["120","60","24","720"],"answer":0,"tip":"Factorial."},
+    {"question":"Si hay repetición permitida y 2 lugares, opciones para 3 símbolos: ¿cuántas?","options":["9","6","3","12"],"answer":0,"tip":"3^2."},
+    {"question":"C(4,4) es: ¿cuánto?","options":["1","4","0","6"],"answer":0,"tip":"Elegir todos = 1 forma."},
+    {"question":"Combinaciones sin orden de 4 elementos tomados 2 a 2: ¿cuántas?","options":["6","4","12","8"],"answer":0,"tip":"4C2 = 6."},
+    {"question":"Si tienes 2 banderas A, B y las ordenas en línea, ¿cuántas formas?","options":["2","1","3","4"],"answer":0,"tip":"2! = 2."},
+    {"question":"Principio multiplicativo: si hay 3 x 4 opciones, el total es...","options":["12","7","1","3"],"answer":0,"tip":"Multiplica cantidades."}
+  ],
+  "Rompecabezas": [
+    {"question":"Si hoy es lunes, ¿qué día será en 3 días?","options":["Jueves","Miércoles","Viernes","Martes"],"answer":0,"tip":"Cuenta hacia adelante."},
+    {"question":"Completa la secuencia: 1, 1, 2, 3, 5, ?","options":["8","7","6","5"],"answer":0,"tip":"Sucesión de Fibonacci."},
+    {"question":"Si A es mayor que B y B es mayor que C, entonces A ¿qué relación tiene con C?","options":["es mayor que","es menor que","igual a","indeterminado"],"answer":0,"tip":"Transitividad."},
+    {"question":"Encuentra el número ausente: 2, 4, 8, 16, ?","options":["32","24","20","30"],"answer":0,"tip":"Multiplica por 2."},
+    {"question":"Si cortas una manzana en 4 partes iguales, ¿cuántas partes hay?","options":["4","2","8","1"],"answer":0,"tip":"Conteo directo."},
+    {"question":"Enigma lógico: Tres interruptores y una bombilla. ¿Cómo identificar cuál enciende con una sola visita?","options":["Encender uno, esperar, apagar y tocar la bombilla","Encender todos","Solo encender el último","No se puede"],"answer":0,"tip":"Usa calor y estado."},
+    {"question":"Si tienes 3 llaves y 1 cerradura, ¿probabilidad de acertar al azar?","options":["1/3","1/2","1/4","1"],"answer":0,"tip":"Un acierto entre tres."},
+    {"question":"Rompecabezas visual: ¿cuántos triángulos hay en un triángulo grande dividido en 4?","options":["4","3","2","5"],"answer":0,"tip":"Cuenta todas las particiones."},
+    {"question":"Resuelve: si X + X + X = 30 y X es entero, ¿X = ?","options":["10","5","15","30"],"answer":0,"tip":"Dividir entre 3."},
+    {"question":"Si dos trenes se cruzan, ¿cuál pasa primero?","options":["Depende de horarios","Izquierdo","Derecho","Ambos"],"answer":0,"tip":"Contexto necesario; generalmente depende."}
+  ]
+}
